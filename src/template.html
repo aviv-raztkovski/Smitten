@@ -7,6 +7,66 @@
     <title>Smitten</title>
 </head>
 <body>
-        
+    <header>
+        <!--TODO move onClick from scroll button to js file -->
+        <nav class="navbar">
+            <img src="../assets/hammerOnAnvil.jpg" alt="logo" class="logo">
+            <div class="nav-btns">
+                <button class="btn nav__btn btn-about">About</button>
+                <button class="btn nav__btn btn-cataloge" onClick="document.getElementById('products').scrollIntoView();">Cataloge</button>
+                <button class="btn nav__btn img-btn btn-cart"></button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="about" id="about">
+        <img src="../dist/imgs/hammerOnAnvil.ac8604616da708a07979eb517e6dab1e.jpg" alt="Mr.Smith img" class="about-img">
+        <h1 class="about-name">My name is Mr.Smith</h1>
+        <p class="about-story">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae laborum nostrum eaque obcaecati laboriosam ipsa suscipit. Cum nostrum magni repellendus modi error laudantium illum aliquam fugiat explicabo quaerat nobis praesentium voluptatibus iste sit, eaque earum? Rem officiis minus, suscipit eaque dolor, odit inventore hic libero architecto nostrum vitae soluta nam.</p>
+    </section>
+
+    <section id="products" class="products">
+        <div class="products-grid"></div>
+    </section>
+    <footer>
+        <p class="rights">All rights reserved to Aviv Raztkovski</p> 
+    </footer>
+    <div class="product-card">
+        <div class="card-content">
+            <div class="card-left">
+                <img src="../dist/imgs/hammerOnAnvil.ac8604616da708a07979eb517e6dab1e.jpg" alt="Product Image" class="product-img">
+            </div>
+            <div class="product-right">
+                <button class="card-close">x</button>
+                <h2 class="product-name"></h2>
+                <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, neque eligendi asperiores consequuntur voluptas earum possimus consectetur esse nesciunt impedit.</p>
+                <h3 class="product-price">$</h3>
+                <div class="add-to-cart">
+                    <button class="btn btn-add-to-cart"></button>
+                    <button class="btn btn-minus">-</button>
+                    <input type="text" class="quantity">
+                    <button class="btn btn-plus">+</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="cart">
+        <div class="cart-product-list">
+            <div class="cart-product">
+                <img src="../dist/imgs/hammerOnAnvil.ac8604616da708a07979eb517e6dab1e.jpg" alt="product mini image" class="product-mini-img">
+                <h4 class="cart-product-name"></h4>
+                <lable class="cart-product-price"></lable>
+                <div class="cart-product-quantity">
+                    <button class="btn btn-minus">-</button>
+                    <lable class="cart-quantity"></lable>
+                    <button class="btn btn-plus">+</button>
+                </div>
+                <button class="cart-remove-product"></button>
+            </div>
+        </div>
+
+    </div>
 </body>
 </html>
